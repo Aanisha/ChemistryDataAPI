@@ -5,6 +5,7 @@ const express = require("express");
 const app = express();
 
 app.listen(5000, () => console.log("Server Start at 5000 Port"));
+
 app.use(express.static('public'));
 app.get('/elements',alldata);
 function alldata(request,response)

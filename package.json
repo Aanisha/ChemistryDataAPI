@@ -1,0 +1,20 @@
+{
+  "name": "chemistry-api",
+  "version": "1.0.0",
+  "description": "This a Chemistry API,which will provide details regarding elements",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "API",
+    "Chemicals",
+    "Elements"
+  ],
+  "author": "Aanisha Bhattacharyya",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "fs": "0.0.1-security"
+  }
+}

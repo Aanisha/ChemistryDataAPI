@@ -18,6 +18,7 @@ app.get('/elements/:element/',searchElement);
 function searchElement(request,response)
 {
 	var word=request.params.element;
+	word=word.charAt(0).toUpperCase()+word.slice(1);
 	console.log(word);
 	//console.log(elements[word]);
 	if(elements[word])

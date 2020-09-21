@@ -5,10 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    
-    "start":"node index.js"
-    
-    
+    "start": "node index.js"
   },
   "keywords": [
     "API",
@@ -19,8 +16,7 @@
   "license": "MIT",
   "dependencies": {
     "express": "^4.17.1",
-    "fs": "0.0.1-security",
-    "heroku": "^7.30.1",
-    "cors":"^2.8.5"
-  }
+    "heroku": "^7.30.1"
+  },
+  "devDependencies": {}
 }

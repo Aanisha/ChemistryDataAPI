@@ -4,7 +4,7 @@
   "description": "This a Chemistry API,which will provide details regarding elements",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js",
     "start": "node index.js"
   },
   "keywords": [
@@ -18,5 +18,7 @@
     "express": "^4.17.1",
     "heroku": "^7.30.1"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
 }

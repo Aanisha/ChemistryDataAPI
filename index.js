@@ -14,7 +14,7 @@ app.use(express.static('public'));
 app.get('/elements', (req, res) => res.json(elements))
 
 app.get('/elements/:element/',searchElement);
-function searchElement(request,response)
+function searchElement(req,res)
 {
 	let word=req.params.element;
 	word=word.charAt(0).toUpperCase()+word.slice(1).toLowerCase();

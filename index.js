@@ -13,17 +13,16 @@ app.use(express.static('public'));
 
 app.get('/elements', (req, res) => res.json(elements))
 
-app.get('/elements/:element/',searchElement);
-function searchElement(req,res)
-{
+function searchElement(req,res) {
 	let word=req.params.element;
 	word=word.charAt(0).toUpperCase()+word.slice(1).toLowerCase();
-	console.log(word);
-	//console.log(elements[word]);
-  const reply = elements[word] ? 
-    elements[word]: 
-    { status:"Not Found" } 
-  console.log(reply.boil);
-	res.send(reply);
-}
+  const subElements=elements.filter((element, index)=>
+    Object.keys(elements[index])[0].startsWith(word)===true
+  )
 
+  const reply = subElements.length!=0  ?
+    subElements:
+    { status:"Not Found" } 
+  console.log(reply)
+	res.json(reply);
+}
